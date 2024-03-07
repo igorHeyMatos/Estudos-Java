@@ -12,5 +12,7 @@ public class exx002 {
         float peso = 0.05f;
 
         System.out.println("Real: " + real + "\nDólar: " + real / dolar + "\nEuro: " + real / euro + "\nPeso: " + real / peso);
+
+        leitor.close();
     }
 }

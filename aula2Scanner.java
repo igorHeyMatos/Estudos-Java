@@ -11,5 +11,7 @@ public class aula2Scanner {
         System.out.println("Digite um número: ");
         int numero = leitor.nextInt();
         System.out.println("Número digitado: " + numero);
+
+        leitor.close();
     }
 }

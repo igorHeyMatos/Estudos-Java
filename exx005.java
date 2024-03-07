@@ -4,31 +4,31 @@ public class exx005 {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
-        int[] mat = new int[5];
-        float[] notaFinal = new float[5];
+        System.out.println("Digite o número da matricula: ");
+        int matricula = leitor.nextInt();
+        leitor.nextLine();
 
-        for (int i = 0; i < 1; i++) {
-            for (int c = 0; c < 2; c++) {
-                System.out.println("Digite o numero da matricula: ");
-                int matricula = leitor.nextInt();
-                mat[c] = matricula;
-                System.out.println("Digite a nota do aluno: ");
-                float nota = leitor.nextFloat();
-                notaFinal[c] = nota;
-            }
-        }
+        System.out.println("Digite o nome do aluno: ");
+        String nome = leitor.nextLine();
 
-        for (int i = 0; i < 1; i++) {
-            for (int c = 0; c < 2; c++) {
-                System.out.println("Matricula: " + mat[c]);
-                System.out.println("Situação: ");
-                if (notaFinal[c] > 6) {
-                    System.out.println("Aprovado ( X ) Reprovado (  )");
-                } else {
-                    System.out.println("Aprovado (  ) Reprovado ( X )");
-                }
-                System.out.println("Nota final: " + notaFinal[c]);
-            }
+        System.out.println("Digite a nota 1 do aluno: ");
+        float nota1 = leitor.nextFloat();
+
+        System.out.println("Digite a nota 2 do aluno: ");
+        float nota2 = leitor.nextFloat();
+
+        float notaFinal = (nota1 + nota2) / 2;
+
+        System.out.println("<---------------->");
+        System.out.println("Matricula: " + matricula);
+        System.out.println("Nome: " + nome);
+        if (notaFinal >= 6) {
+            System.out.println("Aprovado ( X ) Reprovado (   )");
+        } else {
+            System.out.println("Aprovado (   ) Reprovado ( X )");
         }
+        System.out.println("Nota final: " + notaFinal);
+
+        leitor.close();
     }
 }

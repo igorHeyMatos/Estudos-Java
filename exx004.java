@@ -18,5 +18,7 @@ public class exx004 {
         } else if (idade > 110 || idade < 1) {
             System.out.println("ERRO!!!");
         }
+
+        leitor.close();
     }
 }

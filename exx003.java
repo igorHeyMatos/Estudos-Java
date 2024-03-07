@@ -17,5 +17,7 @@ public class exx003 {
         } else {
             System.out.println("Os número são iguais!");
         }
+
+        leitor.close();
     }
 }

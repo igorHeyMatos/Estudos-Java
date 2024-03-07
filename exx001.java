@@ -13,5 +13,7 @@ public class exx001 {
         float area = altura * largura;
 
         System.out.println("Area total: " + area);
+
+        leitor.close();
     }
 }
